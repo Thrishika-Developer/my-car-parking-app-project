@@ -1,0 +1,62 @@
+.cancel_container {
+    padding: 30px;
+    margin-top: 80px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cancel_title {
+    font-size: 26px;
+    color: #7c3aed;
+    margin-bottom: 24px;
+
+}
+
+.cancel_table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.cancel_table th {
+    background: #7c3aed;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.cancel_table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.cancel_table tr:hover {
+    background: #faf5ff;
+
+}
+
+.cancel_btn {
+    background: #dc2626;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+
+}
+
+.cancel_btn:hover {
+    background: #b91c1c;
+}
+
+.success_message {
+    background: #f0fdf4;
+    color: #16a34a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 600;
+}

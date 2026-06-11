@@ -1,0 +1,58 @@
+.book_container {
+    padding: 30px;
+    margin-top: 80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book_title {
+    font-size: 26px;
+    color: #7c3aed;
+    margin-bottom: 24px;
+}
+
+.book_form_card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form_group label {
+    font-size: 14px;
+    font-weight: 600px;
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+.form_group input,
+.form_group select {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background: #7c3aed;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}

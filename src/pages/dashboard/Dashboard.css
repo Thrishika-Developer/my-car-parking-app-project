@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f3ff;
+
+}
+
+.dashboard_container {
+    padding: 30px;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dashboard_title {
+    font-size: 26px;
+    color: #7c3aed;
+    margin-bottom: 24px;
+}
+
+.cards_wrapper {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.card_total {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.card_available {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.card_booked {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.card_occupancy {
+    background: #fffbed;
+    color: #d97706;
+}
