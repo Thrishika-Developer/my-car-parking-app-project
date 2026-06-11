@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom"
 import { useState } from "react"
 import Navbar from "./Navbar"
 import Dashboard from "./pages/dashboard/Dashboard"
@@ -26,13 +26,14 @@ export default function App() {
     }
     const handleCancel = (booking) => {
         setBookings(bookings.filter(b => b.parkingSlot !== booking.parkingSlot))
-        setSlots(slots.map(slot => slot.id == booking.parkingSlot ? { ...slot, status: "available" } : slot))
+        setSlots(slots.map(slot => slot.id === booking.parkingSlot ? { ...slot, status: "available" } : slot))
     }
     return (
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path="/dashboard" element={<Dashboard slots={slots} />} />
+                <Route path="/" element={<Navigate to="/dashboard" />}/>
+                <Route path="/dashboard" index element={<Dashboard slots={slots} />} />
                 <Route path="/slots" element={<ParkingSlots slots={slots} />} />
                 <Route path="/book" element={<BookingParking slots={slots} onBook={handleBook} />} />
                 <Route path="/history" element={<BookingHistory bookings={bookings} />} />
