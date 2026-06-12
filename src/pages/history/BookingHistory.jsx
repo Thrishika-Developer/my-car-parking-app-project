@@ -20,7 +20,7 @@ export default function BookingHistory({ bookings }) {
                     <tr>
                         <th>Customer Name</th>
                         <th>Vehicle Number</th>
-                        <th>slot Number</th>
+                        <th>Slot Number</th>
                         <th>Booking Date</th>
                     </tr>
                 </thead>
